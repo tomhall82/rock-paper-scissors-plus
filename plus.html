@@ -7,11 +7,35 @@
     <title>Rock Paper Scissors +</title>
   </head>
   <body>
-    <h1>Rock, Paper, Scissors Plus!</h1>
+    <h1>Rock, Paper, Scissors</h1>
     <div>
       <a href="traditional.html">Switch to traditional Rock, Paper, Scissors</a>
       <a href="rules.html">Game Rules</a>
     </div>
+    <div class="play-area">
+      <button data-type="rock" class="button game-button rock">
+        <i class="fa-regular fa-hand-back-fist"></i>
+      </button>
+      <button data-type="paper" class="button game-button paper">
+        <i class="fa-regular fa-hand"></i>
+      </button>
+      <button data-type="scissors" class="button game-button scissors">
+        <i class="fa-regular fa-hand-scissors"></i>
+      </button>
+      <button data-type="lizard" class="button game-button lizard">
+        <i class="fa-regular fa-hand-lizard"></i>
+      </button>
+      <button data-type="spock" class="button game-button spock">
+        <i class="fa-regular fa-hand-spock"></i>
+      </button>
+    </div>
+    <div class="score-area"></div>
+    <p class="scores">Wins <span class="wins">0</span></p>
+    <p class="scores">Losses <span class="losses">0</span></p>
+    <script
+      src="https://kit.fontawesome.com/f78bdc0f1e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/script.js"></script>
   </body>
 </html>
