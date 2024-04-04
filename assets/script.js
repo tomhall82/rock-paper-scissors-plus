@@ -1,4 +1,5 @@
 // Select elements
+const mode = document.querySelectorAll(".mode-button");
 const buttons = document.querySelectorAll(".game-button");
 const scoreArea = document.querySelector(".score-area");
 const wins = document.querySelector(".wins");
@@ -21,7 +22,7 @@ function playGame(playerChoice) {
 
   if (playerChoice === computerChoice) {
     // It's a tie
-    alert(`IT'S A DRAW!`);
+    alert(`IT'S A DRAW! Great minds think alike!`);
   } else if (winningCombinations[playerChoice].includes(computerChoice)) {
     // Player wins
     alert(`YOU WIN! Computer chose ${computerChoice}`);

@@ -9,6 +9,13 @@ body {
   color: #ffff;
 }
 
+#intro-buttons {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #rules {
   color: #41ead4;
   text-decoration: underline;
@@ -45,9 +52,3 @@ button > a {
 i {
   font-size: 50px;
 }
-
-/* .play-area {
-    display: flexbox;
-    flex-wrap: wrap;
-flex-direction: row;
-} */
