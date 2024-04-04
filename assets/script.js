@@ -11,11 +11,6 @@ let score = { wins: 0, losses: 0 };
 function playGame(playerChoice) {
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-  if (playerChoice === computerChoice) {
-    // It's a tie
-    alert(`IT'S A DRAW!`);
-  }
-
   const winningCombinations = {
     rock: ["scissors", "lizard"],
     paper: ["rock", "spock"],
@@ -24,7 +19,10 @@ function playGame(playerChoice) {
     spock: ["rock", "scissors"],
   };
 
-  if (winningCombinations[playerChoice].includes(computerChoice)) {
+  if (playerChoice === computerChoice) {
+    // It's a tie
+    alert(`IT'S A DRAW!`);
+  } else if (winningCombinations[playerChoice].includes(computerChoice)) {
     // Player wins
     alert(`YOU WIN! Computer chose ${computerChoice}`);
     score.wins++;
