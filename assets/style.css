@@ -1,0 +1,7 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+/* General Styles */
+body {
+  font-family: "fjalla", sans-serif;
+}
