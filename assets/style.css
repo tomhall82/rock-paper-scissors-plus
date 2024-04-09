@@ -9,6 +9,10 @@ body {
   color: #ffff;
 }
 
+h2 {
+  color: #fbff12;
+}
+
 #rules {
   color: #41ead4;
   text-decoration: underline;
