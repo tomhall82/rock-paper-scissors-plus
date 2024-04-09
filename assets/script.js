@@ -6,11 +6,23 @@ const wins = document.querySelector(".wins");
 const losses = document.querySelector(".losses");
 
 // Game logic
-const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+
 let score = { wins: 0, losses: 0 };
 
 function playGame(playerChoice) {
+  let choices = [];
+  let gameType = sessionStorage.getItem("gameType");
+  if (gameType === "plus") {
+    choices = ["rock", "paper", "scissors", "lizard", "spock"];
+  } else if (gameType === "traditional") {
+    choices = ["rock", "paper", "scissors"];
+  } else {
+    alert(`Game mode not found`);
+  }
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+  console.log("Choices", choices);
+  console.log("Gametype", gameType);
 
   const winningCombinations = {
     rock: ["scissors", "lizard"],
@@ -21,15 +33,15 @@ function playGame(playerChoice) {
   };
 
   if (playerChoice === computerChoice) {
-    // It's a tie
-    alert(`IT'S A DRAW! Great minds think alike!`);
+    // Draw
+    alert(`IT'S A DRAW! \nGreat minds think alike!`);
   } else if (winningCombinations[playerChoice].includes(computerChoice)) {
     // Player wins
-    alert(`YOU WIN! Computer chose ${computerChoice}`);
+    alert(`YOU WIN! \nComputer chose ${computerChoice}`);
     score.wins++;
   } else {
     // Computer wins
-    alert(`YOU LOSE... Computer chose ${computerChoice}`);
+    alert(`YOU LOSE... \nComputer chose ${computerChoice}`);
     score.losses++;
   }
 
@@ -43,5 +55,12 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const playerChoice = button.dataset.type;
     playGame(playerChoice);
+  });
+});
+
+mode.forEach((mode) => {
+  mode.addEventListener("click", () => {
+    gameType = mode.dataset.type;
+    sessionStorage.setItem("gameType", gameType);
   });
 });
