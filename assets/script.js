@@ -42,6 +42,7 @@ function playGame(playerChoice) {
   } else {
     // Computer wins
     alert(`YOU LOSE... \nComputer chose ${computerChoice}`);
+    score.wins = 0;
     score.losses++;
   }
 
