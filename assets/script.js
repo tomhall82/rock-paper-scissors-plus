@@ -4,10 +4,11 @@ const buttons = document.querySelectorAll(".game-button");
 const scoreArea = document.querySelector(".score-area");
 const wins = document.querySelector(".wins");
 const losses = document.querySelector(".losses");
+const highScore = document.querySelector(".high-score");
 
 // Game logic
 
-let score = { wins: 0, losses: 0 };
+let score = { wins: 0, losses: 0, highScore: 0 };
 
 function playGame(playerChoice) {
   let choices = [];
@@ -39,6 +40,10 @@ function playGame(playerChoice) {
     // Player wins
     alert(`YOU WIN! \nComputer chose ${computerChoice}`);
     score.wins++;
+    // Update high score
+    if (score.wins >= score.highScore) {
+      score.highScore = score.wins;
+    }
   } else {
     // Computer wins
     alert(`YOU LOSE... \nComputer chose ${computerChoice}`);
@@ -49,6 +54,7 @@ function playGame(playerChoice) {
   // Update score display
   wins.textContent = score.wins;
   losses.textContent = score.losses;
+  highScore.textContent = score.highScore;
 }
 
 // Add event listeners to buttons
