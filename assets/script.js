@@ -5,6 +5,7 @@ const scoreArea = document.querySelector(".score-area");
 const wins = document.querySelector(".wins");
 const losses = document.querySelector(".losses");
 const highScore = document.querySelector(".high-score");
+const menu = document.querySelectorAll(".menubtn");
 
 // Game logic
 
@@ -12,6 +13,7 @@ let score = { wins: 0, losses: 0, highScore: 0 };
 
 function playGame(playerChoice) {
   let choices = [];
+  let playerName = sessionStorage.getItem("playerName");
   let gameType = sessionStorage.getItem("gameType");
   if (gameType === "plus") {
     choices = ["rock", "paper", "scissors", "lizard", "spock"];
@@ -38,7 +40,7 @@ function playGame(playerChoice) {
     alert(`IT'S A DRAW! \nGreat minds think alike!`);
   } else if (winningCombinations[playerChoice].includes(computerChoice)) {
     // Player wins
-    alert(`YOU WIN! \nComputer chose ${computerChoice}`);
+    alert(`YOU WIN ${playerName}! \nComputer chose ${computerChoice}`);
     score.wins++;
     // Update high score
     if (score.wins >= score.highScore) {
@@ -46,7 +48,9 @@ function playGame(playerChoice) {
     }
   } else {
     // Computer wins
-    alert(`YOU LOSE... \nComputer chose ${computerChoice}`);
+    alert(
+      `Sorry ${playerName}, YOU LOSE... \nComputer chose ${computerChoice}`
+    );
     score.wins = 0;
     score.losses++;
   }
@@ -71,3 +75,20 @@ mode.forEach((mode) => {
     sessionStorage.setItem("gameType", gameType);
   });
 });
+
+// Player name
+
+function getName() {
+  let playerName = prompt(
+    "Welcome to Rock, Paper, Scissors Plus! \nPlease enter your playerName:",
+    ""
+  );
+  if (playerName == null || playerName == "") {
+    alert("Ah, a mysterious stranger... lets play!");
+    playerName = "Mysterious Stranger";
+    sessionStorage.setItem("playerName", playerName);
+  } else {
+    alert("Hi " + playerName + "! Lets play!");
+    sessionStorage.setItem("playerName", playerName);
+  }
+}
