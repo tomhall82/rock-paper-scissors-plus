@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="assets/style.css" />
     <title>Rock Paper Scissors +</title>
   </head>
-  <body>
+  <body onload="getName()">
     <h1>Welcome to Rock, Paper, Scissors Plus!</h1>
     <div>
-      <p>Please choose a game mode:</p>
+      <p><span id="player-name"> </span>, please choose a game mode:</p>
       <div id="intro-buttons">
         <button data-type="traditional" class="mode-button menubtn">
           <a href="traditional.html">Play traditonal Rock, Paper, Scissors</a>
