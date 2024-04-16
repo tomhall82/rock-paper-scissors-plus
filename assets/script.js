@@ -92,3 +92,7 @@ function getName() {
     sessionStorage.setItem("playerName", playerName);
   }
 }
+
+// Display name on index page
+document.getElementById("player-name").innerHTML =
+  sessionStorage.getItem("playerName");
