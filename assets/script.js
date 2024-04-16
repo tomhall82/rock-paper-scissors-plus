@@ -7,14 +7,20 @@ const losses = document.querySelector(".losses");
 const highScore = document.querySelector(".high-score");
 const menu = document.querySelectorAll(".menubtn");
 
+const winningCombinations = {
+  rock: ["scissors", "lizard"],
+  paper: ["rock", "spock"],
+  scissors: ["paper", "lizard"],
+  lizard: ["paper", "spock"],
+  spock: ["rock", "scissors"],
+};
+
 // Game logic
 
 let score = { wins: 0, losses: 0, highScore: 0 };
 
-function playGame(playerChoice) {
+function getUserChoices(gameType) {
   let choices = [];
-  let playerName = sessionStorage.getItem("playerName");
-  let gameType = sessionStorage.getItem("gameType");
   if (gameType === "plus") {
     choices = ["rock", "paper", "scissors", "lizard", "spock"];
   } else if (gameType === "traditional") {
@@ -22,18 +28,17 @@ function playGame(playerChoice) {
   } else {
     alert(`Game mode not found`);
   }
+  return choices;
+}
+
+function playGame(playerChoice) {
+  let playerName = sessionStorage.getItem("playerName");
+  let gameType = sessionStorage.getItem("gameType");
+  const choices = getUserChoices(gameType);
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
   console.log("Choices", choices);
   console.log("Gametype", gameType);
-
-  const winningCombinations = {
-    rock: ["scissors", "lizard"],
-    paper: ["rock", "spock"],
-    scissors: ["paper", "lizard"],
-    lizard: ["paper", "spock"],
-    spock: ["rock", "scissors"],
-  };
 
   if (playerChoice === computerChoice) {
     // Draw
