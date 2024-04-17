@@ -15,6 +15,8 @@ const winningCombinations = {
   spock: ["rock", "scissors"],
 };
 
+let firstVisit = true;
+
 // Game logic
 
 let score = { wins: 0, losses: 0, highScore: 0 };
@@ -81,11 +83,18 @@ mode.forEach((mode) => {
   });
 });
 
-// Player name
-if (window.location.href.match("index.html")) {
+// Player name display and call function on index page for first time visitors
+if (
+  window.location.href.match("index.html") &&
+  sessionStorage.getItem("firstVisit") === true
+) {
   getName();
+  firstVisit = false;
+  sessionStorage.setItem("firstVisit", firstVisit);
+} else {
 }
 
+// Get name function
 function getName() {
   let playerName = prompt(
     "Welcome to Rock, Paper, Scissors Plus! \nPlease enter your playerName:",
@@ -93,14 +102,17 @@ function getName() {
   );
   if (playerName == null || playerName == "") {
     alert("Ah, a mysterious stranger... lets play!");
-    playerName = "Mysterious Stranger";
-    sessionStorage.setItem("playerName", playerName);
+    sessionStorage.setItem("Mysterious Stranger", playerName);
   } else {
     alert("Hi " + playerName + "! Lets play!");
     sessionStorage.setItem("playerName", playerName);
   }
 }
 
+console.log("first visit", sessionStorage.getItem("firstVisit"));
+
 // Display name on index page
-document.getElementById("player-name").innerHTML =
-  sessionStorage.getItem("playerName");
+if (window.location.href.match("index.html")) {
+  document.getElementById("player-name").innerHTML =
+    sessionStorage.getItem("playerName");
+}
