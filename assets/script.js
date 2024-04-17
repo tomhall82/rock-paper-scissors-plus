@@ -5,7 +5,7 @@ const scoreArea = document.querySelector(".score-area");
 const wins = document.querySelector(".wins");
 const losses = document.querySelector(".losses");
 const highScore = document.querySelector(".high-score");
-const menu = document.querySelectorAll(".menubtn");
+const changeName = document.querySelector("#change-username");
 
 const winningCombinations = {
   rock: ["scissors", "lizard"],
@@ -91,28 +91,31 @@ if (
   getName();
   firstVisit = false;
   sessionStorage.setItem("firstVisit", firstVisit);
-} else {
 }
 
 // Get name function
 function getName() {
   let playerName = prompt(
-    "Welcome to Rock, Paper, Scissors Plus! \nPlease enter your playerName:",
+    "Welcome to Rock, Paper, Scissors Plus! \nPlease enter your Username:",
     ""
   );
   if (playerName == null || playerName == "") {
     alert("Ah, a mysterious stranger... lets play!");
-    sessionStorage.setItem("Mysterious Stranger", playerName);
+    playerName = "Mysterious Stranger";
+    sessionStorage.setItem("playerName", playerName);
   } else {
     alert("Hi " + playerName + "! Lets play!");
     sessionStorage.setItem("playerName", playerName);
   }
+  location.replace("index.html");
 }
 
 console.log("first visit", sessionStorage.getItem("firstVisit"));
+console.log("player name", sessionStorage.getItem("playerName"));
 
-// Display name on index page
+// Change and display name on index page
 if (window.location.href.match("index.html")) {
   document.getElementById("player-name").innerHTML =
     sessionStorage.getItem("playerName");
+  changeName.addEventListener("click", getName);
 }
