@@ -82,6 +82,9 @@ mode.forEach((mode) => {
 });
 
 // Player name
+if (window.location.href.match("index.html")) {
+  getName();
+}
 
 function getName() {
   let playerName = prompt(
