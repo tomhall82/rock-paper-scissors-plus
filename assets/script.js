@@ -39,12 +39,12 @@ function playGame(playerChoice) {
   const choices = getUserChoices(gameType);
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-  console.log("Choices", choices);
-  console.log("Gametype", gameType);
+  console.log("Choices:", choices);
+  console.log("Gametype:", gameType);
 
   if (playerChoice === computerChoice) {
     // Draw
-    alert(`IT'S A DRAW! \nGreat minds think alike!`);
+    alert(`IT'S A DRAW! \nGreat minds think alike ${playerName}!`);
   } else if (winningCombinations[playerChoice].includes(computerChoice)) {
     // Player wins
     alert(`YOU WIN ${playerName}! \nComputer chose ${computerChoice}`);
@@ -68,7 +68,7 @@ function playGame(playerChoice) {
   highScore.textContent = score.highScore;
 }
 
-// Add event listeners to buttons
+// Add event listeners to game buttons
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const playerChoice = button.dataset.type;
@@ -76,6 +76,7 @@ buttons.forEach((button) => {
   });
 });
 
+// Add event listeners to gamemode buttons
 mode.forEach((mode) => {
   mode.addEventListener("click", () => {
     gameType = mode.dataset.type;
@@ -85,8 +86,9 @@ mode.forEach((mode) => {
 
 // Player name display and call function on index page for first time visitors
 if (
-  window.location.href.match("index.html") &&
-  sessionStorage.getItem("firstVisit") === true
+  (window.location.href.match("index.html") &&
+    sessionStorage.getItem("firstVisit") === true) ||
+  sessionStorage.getItem("firstVisit") === null
 ) {
   getName();
   firstVisit = false;
@@ -110,8 +112,8 @@ function getName() {
   location.replace("index.html");
 }
 
-console.log("first visit", sessionStorage.getItem("firstVisit"));
-console.log("player name", sessionStorage.getItem("playerName"));
+console.log("first visit:", sessionStorage.getItem("firstVisit"));
+console.log("player name:", sessionStorage.getItem("playerName"));
 
 // Change and display name on index page
 if (window.location.href.match("index.html")) {
