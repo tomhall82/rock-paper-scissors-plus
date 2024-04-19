@@ -170,3 +170,14 @@ i {
     min-width: 320px;
   }
 }
+
+/* Media query: tablet */
+@media screen and (min-width: 768px) {
+  /* General */
+  body {
+    font-size: 18px;
+    max-width: 500px;
+    margin: auto;
+    padding: 50px 0;
+  }
+}
