@@ -118,7 +118,6 @@ i {
   button {
     font-size: 16px;
     max-width: 280px;
-    /* margin: 20px 0; */
     height: 60px;
   }
 
@@ -133,5 +132,41 @@ i {
     padding: 0 15px;
     font-size: 20px;
     margin: 10px;
+  }
+
+  .menubtn {
+    min-width: 300px;
+  }
+}
+
+/* Media query: large mobile phones */
+@media screen and (min-width: 390px) {
+  /* General */
+  body {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+    max-width: 320px;
+    margin: 10px 0;
+    height: 60px;
+  }
+
+  /* Game buttons */
+  .game-button {
+    width: 120px;
+    height: 120px;
+  }
+
+  .scores {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .menubtn {
+    min-width: 320px;
   }
 }
