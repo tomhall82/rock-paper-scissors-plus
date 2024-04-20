@@ -1,39 +1,275 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors Plus!
 
-Welcome,
+## Contents
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- [User Experience](#user-experience-ux)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+  - [Client Goals](#client-goals)
+  - [First Time Visitor Goals](#first-time-visitor-goals)
+  - [Returning Visitor Goals](#returning-visitor-goals)
 
-## Codeanywhere Reminders
+- [Design](#design)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+  - [Colour Scheme](#colour-scheme)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
 
-`python3 -m http.server`
+- [Features](#features)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  - [All pages](#all-pages-have)
+  - [Menu](#menu-1)
+  - [Traditional Rock, Paper, Scissors](#traditional-rock-paper-scissors)
+  - [Rock, Paper, Scissors, Lizard, Spock](#rock-paper-scissors-lizard-spock)
+  - [Rules](#game-rules)
+  - [404 Page not found](#404-page-not-found)
+  - [Future Implementations](#future-implementations)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- [Accessibility](#accessibility)
+- [Technologies Used](#technologies-used)
 
-`http_server`
+  - [Languages Used](#languages-used)
+  - [Libraries & Programs Used](#libraries--programs-used)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- [Deployment & Local Development](#deployment--local-development)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  - [Deployment](#deployment)
+  - [How to Fork](#how-to-fork)
+  - [How to Clone](#how-to-clone)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- [Testing](#testing)
 
-To log into the Heroku toolbelt CLI:
+  - [W3C Validator](#w3c-validator)
+  - [Lighthouse](#lighthouse)
+  - [Wave](#wave)
+  - [Solved Bugs](#solved-bugs)
+  - [Known Bugs](#known-bugs)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- [Credits]
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - [Code Used](#code-used)
+  - [Content](#content)
+  - [Media](#media)
+    - [Menu](#menu-1)
+    - [Traditional Rock, Paper, Scissors](#traditional-rock-paper-scissors-1)
+    - [Rock, Paper, Scissors, Lizard, Spock](#rock-paper-scissors-lizard-spock-1)
+    - [Rules](#game-rules-1)
 
----
+- [Acknowledgments](#acknowledgments)
 
-Happy coding!
+## User Experience (UX)
+
+### Client Goals
+
+-
+
+### First Time Visitor Goals
+
+-
+
+### Returning Visitor Goals
+
+-
+
+## Design
+
+### Colour Scheme
+
+### Typography
+
+Google Fonts was used for the following fonts:
+
+-
+
+### Imagery
+
+## Features
+
+- ###### All pages have:
+
+  -
+
+- ###### Menu
+
+  -
+
+- ###### Traditional Rock, Paper, Scissors
+
+  -
+
+- ###### Rock, Paper, Scissors, Lizard, Spock
+
+  -
+
+- ###### Game Rules
+
+  -
+
+- ###### 404 Page not found
+
+  - Website specific 404 page not found complete with links back to each page.
+
+- ###### Future Implementations
+  -
+
+## Accessibility
+
+During coding I have endeavoured to ensure that the website is as accessible friendly as possible. I have achieved this by:
+Using semantic HTML.
+Ensuring that there is a sufficient colour contrast throughout the site.
+
+## Technologies Used
+
+#### Languages Used
+
+HTML, CSS and JavaScript were used to create this website.
+
+#### Libraries & Programs Used
+
+Git - For version control.
+
+[Github](https://github.com/) - To save and store the files for the website.
+
+[Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+[Font Awesome](https://fontawesome.com/) - For the iconography on the website.
+
+Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+[Favicon.io](https://favicon.io/) To create favicon.
+
+[Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on a range of devices.
+
+[W3C Validator](https://validator.w3.org/) To test HTML.
+
+[W3C Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) To test CSS.
+
+[Wave](https://wave.webaim.org/) To test accessibility.
+
+## Deployment & Local Development
+
+### Deployment
+
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+Log in (or sign up) to Github.
+Find the repository for this project, rock-paper-scissors-plus.
+Click on the Settings link.
+Click on the Pages link in the left-hand side navigation bar.
+In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+Click Save. Your live Github Pages site is now deployed at the URL shown.
+Local Development
+
+### How to Fork
+
+To fork the rock-paper-scissors-plus repository:
+
+Log in (or sign up) to Github.
+Go to the repository for this project, tomhall82/rock-paper-scissors-plus.
+Click the Fork button in the top right corner.
+
+### How to Clone
+
+To clone the rock-paper-scissors-plus repository:
+
+Log in (or sign up) to GitHub.
+Go to the repository for this project, tomhall82/rock-paper-scissors-plus.
+Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+The live link can be found here - [https://tomhall82.github.io/rock-paper-scissors-plus/](https://tomhall82.github.io/rock-paper-scissors-plus/)
+
+## Testing
+
+Since deployment the site has been continually tested on iOS and android devices alongside chrome, edge and Firefox browsers.
+
+On both mobile and tablet, the site has been tested in both portrait and landscape orientations. The desktop tests have been conducted in various size windows and dynamically to ensure responsiveness.
+
+In addition to this, the webpage has been submitted for peer review through slack.
+
+### [W3C Validator](https://validator.w3.org/)
+
+### Lighthouse
+
+##### index.html
+
+Desktop
+
+Mobile
+
+##### traditional.html
+
+Desktop
+
+Mobile
+
+##### plus.html
+
+Desktop
+
+Mobile
+
+##### rules.html
+
+Desktop
+
+Mobile
+
+### [Wave](https://wave.webaim.org/)
+
+To test accessibility, Wave was used. All came back in a positive light except for one error found on the thank-you page which is detailed below.
+
+##### index.html
+
+##### traditional.html
+
+##### plus.html
+
+##### rules.html
+
+##### 404.html
+
+### Solved Bugs
+
+1.
+
+### Known Bugs
+
+1. None currently.
+
+## Credits
+
+### Code Used
+
+-
+
+### Content
+
+-
+
+### Media
+
+#### Menu:
+
+-
+
+#### Traditional Rock, Paper, Scissors:
+
+-
+
+#### Rock, Paper, Scissors, Lizard, Spock:
+
+-
+
+#### Game Rules:
+
+-
+
+#### 404.html
+
+-
+
+## Acknowledgments
+
+- [Graeme Taylor](https://github.com/G-Taylor), my Code Institute mentor.
+-
