@@ -39,18 +39,26 @@
   <body>
     <h1 id="traditional">Rock, Paper, Scissors</h1>
     <div>
-      <button data-type="plus" class="mode-button">
+      <button
+        aria-label="play rock, paper, scissors, lizard, spock"
+        data-type="plus"
+        class="mode-button"
+      >
         <a href="plus.html">Play Rock, Paper, Scissors, Lizard, Spock</a>
       </button>
     </div>
     <div class="play-area">
-      <button data-type="rock" class="game-button rock">
+      <button aria-label="rock" data-type="rock" class="game-button rock">
         <i class="fa-regular fa-hand-back-fist"></i>
       </button>
-      <button data-type="paper" class="game-button paper">
+      <button aria-label="paper" data-type="paper" class="game-button paper">
         <i class="fa-regular fa-hand"></i>
       </button>
-      <button data-type="scissors" class="game-button scissors">
+      <button
+        aria-label="scissors"
+        data-type="scissors"
+        class="game-button scissors"
+      >
         <i class="fa-regular fa-hand-scissors"></i>
       </button>
     </div>
@@ -59,8 +67,10 @@
     <p class="scores">Losses: <span class="losses">0</span></p>
     <p class="scores">High Score: <span class="high-score">0</span></p>
     <div>
-      <button><a href="rules.html">Game Rules</a></button>
-      <button><a href="index.html">Main Menu</a></button>
+      <button aria-label="game rules">
+        <a href="rules.html">Game Rules</a>
+      </button>
+      <button aria-label="main menu"><a href="index.html">Main Menu</a></button>
     </div>
     <!-- Font awesome kit -->
     <script
