@@ -39,9 +39,6 @@ function playGame(playerChoice) {
   const choices = getUserChoices(gameType);
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-  console.log("Choices:", choices);
-  console.log("Gametype:", gameType);
-
   if (playerChoice === computerChoice) {
     // Draw
     alert(`IT'S A DRAW! \nGreat minds think alike ${playerName}!`);
@@ -111,9 +108,6 @@ function getName() {
   }
   location.replace("index.html");
 }
-
-console.log("first visit:", sessionStorage.getItem("firstVisit"));
-console.log("player name:", sessionStorage.getItem("playerName"));
 
 // Change and display name on index page
 if (window.location.href.match("index.html")) {
