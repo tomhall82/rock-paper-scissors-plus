@@ -1,5 +1,11 @@
 # Rock, Paper, Scissors Plus!
 
+This website contains the traditional Rock, Paper, Scissors game along with a twist on the original. Rock, Paper, Scissors, Lizard, Spock is an evolution of the well known traditional Rock, Paper, Scissors including a higher level of chance from the additional two selections.
+
+![rock_paper_scissors_plus_screenshots_from_am_i_responsive](assets/docs/am_i_responsive_rpsp.png)
+
+[Visit Rock Paper Scissors Plus](https://tomhall82.github.io/rock-paper-scissors-plus/index.html)
+
 ## Contents
 
 - [User Experience](#user-experience-ux)
@@ -60,56 +66,95 @@
 
 ### Client Goals
 
--
+- To be able to view the site on a variety of device sizes.
+- To be able to easily navigate to the game mode of their choice.
+- To be able to play the different game modes.
+- To be able to input their own username.
+- To be able to find the game rules.
 
 ### First Time Visitor Goals
 
--
+- I want to play "Rock, Paper, Scissors".
+- I want to play "Rock, Paper, Scissors, Lizard, Spock".
+- I want to find the game rules.
+- I want to set my username.
 
 ### Returning Visitor Goals
 
--
+- I want to play my prefered game mode.
+- I want to try and achieve the highest win streak possible.
 
 ## Design
 
 ### Colour Scheme
 
+![rock-paper-scissors-plus-colour-pallett](assets/docs/rock_paper_scissors_plus.png)
+
+The website uses a vibrant selection of colours created using the [coolors](https://coolors.co/) website.
+
 ### Typography
 
 Google Fonts was used for the following fonts:
 
--
+- Fjalla is used for all text
 
 ### Imagery
+
+- Icon imagery is taken from [FontAwesome](https://fontawesome.com/)
 
 ## Features
 
 - ###### All pages have:
 
-  -
+  - A link to each game mode.
+    ![traditional_rock_paper_scissors_selection_button](assets/docs/traditional_button.png)
+    ![traditional_rock_paper_scissors_plus_selection_button](assets/docs/plus_button.png)
+  - A link to the main menu.
+    ![main_menu_button](assets/docs/main_menu_button.png)
+  - A link to the game rules.
+    ![game_rules_button](assets/docs/game_rules_button.png)
 
 - ###### Menu
 
-  -
+  - The menu page contains links to the games and rules page.
+    ![main_menu](assets/docs/main_menu_choices.png)
+  - The "Change Username" button generates an alert window which will allow the player to change their name. This window will also open on the players first visit. I have maintained the welcome message to allow for multiple players changing their names through a single session.
+    ![username_input](assets/docs/username_input.png)
+  - This page will also show the current players username, if entered. If no name is entered the username will show "Mysterious Stranger"
 
 - ###### Traditional Rock, Paper, Scissors
 
-  -
+  - This page contains a traditional game of Rock, Paper, Scissors.
+    ![rock_paper_scissors_game](assets/docs/rock_paper_scissors_game.png)
+  - Custom win, lose or draw message alert generated based on player username along with confirmation of computer choice.
+    ![win_alert](assets/docs/win_alert.png)
+  - Wins reset to 0 upon a loss, the high socre will also show the users longest winning streak whilst also counting losses.
+    ![scores](assets/docs/scores.png)
 
 - ###### Rock, Paper, Scissors, Lizard, Spock
 
-  -
+  - This page contains a game of Rock, Paper, Scissors, Lizard, Spock.
+    ![rock_paper_scissors_plus_game](assets/docs/rock_paper_scissors_plus_game.png)
+  - Custom win, lose or draw message alert generated based on player username along with confirmation of computer choice.
+    ![lose_alert](assets/docs/lose_alert.png)
+  - Wins reset to 0 upon a loss, the high socre will also show the users longest winning streak whilst also counting losses.
 
 - ###### Game Rules
 
-  -
+  - This page contains a breakdown of the rules for each game mode.
+    ![game_rules](assets/docs/game_rules.png)
+  - Also included are general gameplay rules and instructions on how to change your username.
+    ![general_rules](assets/docs/general_rules.png)
+  - buttons to the main menu and both game modes can also be found in their relevant section on this page.
 
 - ###### 404 Page not found
 
-  - Website specific 404 page not found complete with links back to each page.
+  - Website specific 404 page not found complete with link back to the main menu.
+    ![page_not_found](assets/docs/404.png)
 
 - ###### Future Implementations
-  -
+  - Additonal game mode(s). For example "Rock, Paper, Scissors, Lizard, Spock, Spiderman, Batman, Wizard, Glock.
+  - Scoreboard feature.
 
 ## Accessibility
 
