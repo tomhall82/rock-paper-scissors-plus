@@ -182,8 +182,9 @@ Google Fonts was used for the following fonts:
 ## Accessibility
 
 During coding I have endeavoured to ensure that the website is as accessible friendly as possible. I have achieved this by:
-Using semantic HTML.
-Ensuring that there is a sufficient colour contrast throughout the site.
+
+- Using semantic HTML.
+- Ensuring that there is a sufficient colour contrast throughout the site.
 
 ## Technologies Used
 
