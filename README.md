@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors Plus!
 
-This website contains the traditional Rock, Paper, Scissors game along with a twist on the original. Rock, Paper, Scissors, Lizard, Spock is an evolution of the well known traditional Rock, Paper, Scissors including a higher level of chance from the additional two selections.
+This website contains the traditional Rock, Paper, Scissors game along with a twist on the original. Rock, Paper, Scissors, Lizard, Spock is an evolution of the well-known traditional Rock, Paper, Scissors including a higher level of chance from the additional two selections.
 
 ![rock_paper_scissors_plus_screenshots_from_am_i_responsive](assets/docs/am_i_responsive_rpsp.png)
 
@@ -81,7 +81,7 @@ This website contains the traditional Rock, Paper, Scissors game along with a tw
 
 ### Returning Visitor Goals
 
-- I want to play my prefered game mode.
+- I want to play my preferred game mode.
 - I want to try and achieve the highest win streak possible.
 
 ## Design
@@ -100,7 +100,7 @@ Google Fonts was used for the following fonts:
 
 ### Imagery
 
-- Icon imagery is taken from [FontAwesome](https://fontawesome.com/)
+- Icon imagery is taken from [Font Awesome](https://fontawesome.com/)
 
 ## Features
 
@@ -141,7 +141,7 @@ Google Fonts was used for the following fonts:
 
 ![win_alert](assets/docs/win_alert.png)
 
-- Wins reset to 0 upon a loss, the high socre will also show the users longest winning streak whilst also counting losses.
+- Wins reset to 0 upon a loss, the high score will also show the users longest winning streak whilst also counting losses.
 
 ![scores](assets/docs/scores.png)
 
@@ -155,7 +155,7 @@ Google Fonts was used for the following fonts:
 
 ![lose_alert](assets/docs/lose_alert.png)
 
-- Wins reset to 0 upon a loss, the high socre will also show the users longest winning streak whilst also counting losses.
+- Wins reset to 0 upon a loss, the high score will also show the users longest winning streak whilst also counting losses.
 
 - ###### Game Rules
 
@@ -176,7 +176,7 @@ Google Fonts was used for the following fonts:
 ![page_not_found](assets/docs/404.png)
 
 - ###### Future Implementations
-  - Additonal game mode(s). For example "Rock, Paper, Scissors, Lizard, Spock, Spiderman, Batman, Wizard, Glock.
+  - Additional game mode(s). For example "Rock, Paper, Scissors, Lizard, Spock, Spiderman, Batman, Wizard, Glock.
   - Scoreboard feature.
 
 ## Accessibility
@@ -293,23 +293,43 @@ Mobile
 
 ![rules.html mobile lighthouse results](assets/docs/testing/lighthouse_rules_mobile.png)
 
+##### 404.html
+
+![404.html desktop lighthouse results](assets/docs/testing/lighthouse_404_desktop.png)
+
+Mobile
+
+![404.html mobile lighthouse results](assets/docs/testing/lighthouse_404_mobile.png)
+
 ### [Wave](https://wave.webaim.org/)
 
 To test accessibility, Wave was used. All came back in a positive light except for one error found on the thank-you page which is detailed below.
 
 ##### index.html
 
+![index.html wave results](assets/docs/testing/wave_index.png)
+
 ##### traditional.html
+
+![traditional.html wave results](assets/docs/testing/wave_traditional.png)
 
 ##### plus.html
 
+![plus.html wave results](assets/docs/testing/wave_plus.png)
+
 ##### rules.html
+
+![rules.html wave results](assets/docs/testing/wave_rules.png)
 
 ##### 404.html
 
+![404.html wave results](assets/docs/testing/wave_404.png)
+
 ### Solved Bugs
 
-1.
+1. Game mode wouldn't change between "traditional" and "plus". The computer was using all five available options regardless of game mode. This was resolved using a function and else if command to select the correct array dependant on the game mode selected.
+1. Player name not showing correctly on main menu, even after changing. Solved by setting <location.replace("index.html");> at the end of the getName function to refresh the page and show the correct name when changed.
+1. Alert box showing every time user visits index.html. Solved by checking to see if this is the users first visit and if there is a name already in session storage. If there is, no alert unless prompted by the user using the change username button. If there is not, alert box will appear requesting player name.
 
 ### Known Bugs
 
@@ -327,25 +347,17 @@ To test accessibility, Wave was used. All came back in a positive light except f
 
 ### Media
 
-#### Menu:
+#### General:
 
--
+- Favicon courtesy of [Favicon.io](https://favicon.io/emoji-favicons/trophy/)
 
 #### Traditional Rock, Paper, Scissors:
 
--
+- Game icons courtesy of [Font Awesome](https://fontawesome.com/)
 
 #### Rock, Paper, Scissors, Lizard, Spock:
 
--
-
-#### Game Rules:
-
--
-
-#### 404.html
-
--
+- Game icons courtesy of [Font Awesome](https://fontawesome.com/)
 
 ## Acknowledgments
 
