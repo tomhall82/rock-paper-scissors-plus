@@ -107,50 +107,73 @@ Google Fonts was used for the following fonts:
 - ###### All pages have:
 
   - A link to each game mode.
-    ![traditional_rock_paper_scissors_selection_button](assets/docs/traditional_button.png)
-    ![traditional_rock_paper_scissors_plus_selection_button](assets/docs/plus_button.png)
-  - A link to the main menu.
-    ![main_menu_button](assets/docs/main_menu_button.png)
-  - A link to the game rules.
-    ![game_rules_button](assets/docs/game_rules_button.png)
+
+![traditional_rock_paper_scissors_selection_button](assets/docs/traditional_button.png)
+![traditional_rock_paper_scissors_plus_selection_button](assets/docs/plus_button.png)
+
+- A link to the main menu.
+
+![main_menu_button](assets/docs/main_menu_button.png)
+
+- A link to the game rules.
+
+![game_rules_button](assets/docs/game_rules_button.png)
 
 - ###### Menu
 
   - The menu page contains links to the games and rules page.
-    ![main_menu](assets/docs/main_menu_choices.png)
-  - The "Change Username" button generates an alert window which will allow the player to change their name. This window will also open on the players first visit. I have maintained the welcome message to allow for multiple players changing their names through a single session.
-    ![username_input](assets/docs/username_input.png)
-  - This page will also show the current players username, if entered. If no name is entered the username will show "Mysterious Stranger"
+
+![main_menu](assets/docs/main_menu_choices.png)
+
+- The "Change Username" button generates an alert window which will allow the player to change their name. This window will also open on the players first visit. I have maintained the welcome message to allow for multiple players changing their names through a single session.
+
+![username_input](assets/docs/username_input.png)
+
+- This page will also show the current players username, if entered. If no name is entered the username will show "Mysterious Stranger"
 
 - ###### Traditional Rock, Paper, Scissors
 
   - This page contains a traditional game of Rock, Paper, Scissors.
-    ![rock_paper_scissors_game](assets/docs/rock_paper_scissors_game.png)
-  - Custom win, lose or draw message alert generated based on player username along with confirmation of computer choice.
-    ![win_alert](assets/docs/win_alert.png)
-  - Wins reset to 0 upon a loss, the high socre will also show the users longest winning streak whilst also counting losses.
-    ![scores](assets/docs/scores.png)
+
+![rock_paper_scissors_game](assets/docs/rock_paper_scissors_game.png)
+
+- Custom win, lose or draw message alert generated based on player username along with confirmation of computer choice.
+
+![win_alert](assets/docs/win_alert.png)
+
+- Wins reset to 0 upon a loss, the high socre will also show the users longest winning streak whilst also counting losses.
+
+![scores](assets/docs/scores.png)
 
 - ###### Rock, Paper, Scissors, Lizard, Spock
 
   - This page contains a game of Rock, Paper, Scissors, Lizard, Spock.
-    ![rock_paper_scissors_plus_game](assets/docs/rock_paper_scissors_plus_game.png)
-  - Custom win, lose or draw message alert generated based on player username along with confirmation of computer choice.
-    ![lose_alert](assets/docs/lose_alert.png)
-  - Wins reset to 0 upon a loss, the high socre will also show the users longest winning streak whilst also counting losses.
+
+![rock_paper_scissors_plus_game](assets/docs/rock_paper_scissors_plus_game.png)
+
+- Custom win, lose or draw message alert generated based on player username along with confirmation of computer choice.
+
+![lose_alert](assets/docs/lose_alert.png)
+
+- Wins reset to 0 upon a loss, the high socre will also show the users longest winning streak whilst also counting losses.
 
 - ###### Game Rules
 
   - This page contains a breakdown of the rules for each game mode.
-    ![game_rules](assets/docs/game_rules.png)
-  - Also included are general gameplay rules and instructions on how to change your username.
-    ![general_rules](assets/docs/general_rules.png)
-  - buttons to the main menu and both game modes can also be found in their relevant section on this page.
+
+![game_rules](assets/docs/game_rules.png)
+
+- Also included are general gameplay rules and instructions on how to change your username.
+
+![general_rules](assets/docs/general_rules.png)
+
+- buttons to the main menu and both game modes can also be found in their relevant section on this page.
 
 - ###### 404 Page not found
 
   - Website specific 404 page not found complete with link back to the main menu.
-    ![page_not_found](assets/docs/404.png)
+
+![page_not_found](assets/docs/404.png)
 
 - ###### Future Implementations
   - Additonal game mode(s). For example "Rock, Paper, Scissors, Lizard, Spock, Spiderman, Batman, Wizard, Glock.
@@ -240,25 +263,35 @@ In addition to this, the webpage has been submitted for peer review through slac
 
 Desktop
 
+![index.html desktop lighthouse results](assets/docs/testing/lighthouse_index_desktop.png)
+
 Mobile
+
+![index.html mobile lighthouse results](assets/docs/testing/lighthouse_index_mobile.png)
 
 ##### traditional.html
 
-Desktop
+![traditional.html desktop lighthouse results](assets/docs/testing/lighthouse_traditional_desktop.png)
 
 Mobile
+
+![traditional.html mobile lighthouse results](assets/docs/testing/lighthouse_traditional_mobile.png)
 
 ##### plus.html
 
-Desktop
+![plus.html desktop lighthouse results](assets/docs/testing/lighthouse_plus_desktop.png)
 
 Mobile
+
+![plus.html mobile lighthouse results](assets/docs/testing/lighthouse_plus_mobile.png)
 
 ##### rules.html
 
-Desktop
+![rules.html desktop lighthouse results](assets/docs/testing/lighthouse_rules_desktop.png)
 
 Mobile
+
+![rules.html mobile lighthouse results](assets/docs/testing/lighthouse_rules_mobile.png)
 
 ### [Wave](https://wave.webaim.org/)
 
