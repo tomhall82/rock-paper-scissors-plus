@@ -1,7 +1,6 @@
 // Select elements
 const mode = document.querySelectorAll(".mode-button");
 const buttons = document.querySelectorAll(".game-button");
-const scoreArea = document.querySelector(".score-area");
 const wins = document.querySelector(".wins");
 const losses = document.querySelector(".losses");
 const highScore = document.querySelector(".high-score");
@@ -76,7 +75,7 @@ buttons.forEach((button) => {
 // Add event listeners to gamemode buttons
 mode.forEach((mode) => {
   mode.addEventListener("click", () => {
-    gameType = mode.dataset.type;
+    const gameType = mode.dataset.type;
     sessionStorage.setItem("gameType", gameType);
   });
 });
