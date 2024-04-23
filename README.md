@@ -258,73 +258,90 @@ In addition to this, the webpage has been submitted for peer review through slac
 
 ### [W3C Validator](https://validator.w3.org/)
 
+The W3C validator was used to validate all HTML pages on the site with no errors found. For the CSS, the W3C (Jigsaw) validator was used with no errors found.
+
+- [index.html](assets/docs/testing/w3c/w3c_index.html.png)
+- [traditional.html](assets/docs/testing/w3c/w3c_traditional.html.png)
+- [plus.html](assets/docs/testing/w3c/w3c_plus.html.png)
+- [rules.html](assets/docs/testing/w3c/w3c_rules.html.png)
+- [404.html](assets/docs/testing/w3c/w3c_404.html.png)
+- [style.css](assets/docs/testing/w3c/w3c_style.css.png)
+
+### [JS Hint](https://jshint.com/)
+
+JS Hint was used to validate the JavaScript with no errors found.
+
+- [script.js](assets/docs/testing/jshint_script.js.png)
+
 ### Lighthouse
+
+Using google developer tools, Lighthouse testing was also conducted on each of the pages. The results are as below:
 
 ##### index.html
 
 Desktop
 
-![index.html desktop lighthouse results](assets/docs/testing/lighthouse_index_desktop.png)
+![index.html desktop lighthouse results](assets/docs/testing/lighthouse/lighthouse_index_desktop.png)
 
 Mobile
 
-![index.html mobile lighthouse results](assets/docs/testing/lighthouse_index_mobile.png)
+![index.html mobile lighthouse results](assets/docs/testing/lighthouse/lighthouse_index_mobile.png)
 
 ##### traditional.html
 
-![traditional.html desktop lighthouse results](assets/docs/testing/lighthouse_traditional_desktop.png)
+![traditional.html desktop lighthouse results](assets/docs/testing/lighthouse/lighthouse_traditional_desktop.png)
 
 Mobile
 
-![traditional.html mobile lighthouse results](assets/docs/testing/lighthouse_traditional_mobile.png)
+![traditional.html mobile lighthouse results](assets/docs/testing/lighthouse/lighthouse_traditional_mobile.png)
 
 ##### plus.html
 
-![plus.html desktop lighthouse results](assets/docs/testing/lighthouse_plus_desktop.png)
+![plus.html desktop lighthouse results](assets/docs/testing/lighthouse/lighthouse_plus_desktop.png)
 
 Mobile
 
-![plus.html mobile lighthouse results](assets/docs/testing/lighthouse_plus_mobile.png)
+![plus.html mobile lighthouse results](assets/docs/testing/lighthouse/lighthouse_plus_mobile.png)
 
 ##### rules.html
 
-![rules.html desktop lighthouse results](assets/docs/testing/lighthouse_rules_desktop.png)
+![rules.html desktop lighthouse results](assets/docs/testing/lighthouse/lighthouse_rules_desktop.png)
 
 Mobile
 
-![rules.html mobile lighthouse results](assets/docs/testing/lighthouse_rules_mobile.png)
+![rules.html mobile lighthouse results](assets/docs/testing/lighthouse/lighthouse_rules_mobile.png)
 
 ##### 404.html
 
-![404.html desktop lighthouse results](assets/docs/testing/lighthouse_404_desktop.png)
+![404.html desktop lighthouse results](assets/docs/testing/lighthouse/lighthouse_404_desktop.png)
 
 Mobile
 
-![404.html mobile lighthouse results](assets/docs/testing/lighthouse_404_mobile.png)
+![404.html mobile lighthouse results](assets/docs/testing/lighthouse/lighthouse_404_mobile.png)
 
 ### [Wave](https://wave.webaim.org/)
 
-To test accessibility, Wave was used. All came back in a positive light except for one error found on the thank-you page which is detailed below.
+To test accessibility, Wave was used. All came back in a positive light.
 
 ##### index.html
 
-![index.html wave results](assets/docs/testing/wave_index.png)
+![index.html wave results](assets/docs/testing/wave/wave_index.png)
 
 ##### traditional.html
 
-![traditional.html wave results](assets/docs/testing/wave_traditional.png)
+![traditional.html wave results](assets/docs/testing/wave/wave_traditional.png)
 
 ##### plus.html
 
-![plus.html wave results](assets/docs/testing/wave_plus.png)
+![plus.html wave results](assets/docs/testing/wave/wave_plus.png)
 
 ##### rules.html
 
-![rules.html wave results](assets/docs/testing/wave_rules.png)
+![rules.html wave results](assets/docs/testing/wave/wave_rules.png)
 
 ##### 404.html
 
-![404.html wave results](assets/docs/testing/wave_404.png)
+![404.html wave results](assets/docs/testing/wave/wave_404.png)
 
 ### Solved Bugs
 
