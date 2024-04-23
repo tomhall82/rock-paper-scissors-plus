@@ -47,15 +47,15 @@ This website contains the traditional Rock, Paper, Scissors game along with a tw
   - [W3C Validator](#w3c-validator)
   - [Lighthouse](#lighthouse)
   - [Wave](#wave)
+  - [Manual Testing](#manual-testing)
   - [Solved Bugs](#solved-bugs)
   - [Known Bugs](#known-bugs)
 
-- [Credits]
+- [Credits](#credits)
 
   - [Code Used](#code-used)
-  - [Content](#content)
   - [Media](#media)
-    - [Menu](#menu-1)
+    - [General](#general)
     - [Traditional Rock, Paper, Scissors](#traditional-rock-paper-scissors-1)
     - [Rock, Paper, Scissors, Lizard, Spock](#rock-paper-scissors-lizard-spock-1)
     - [Rules](#game-rules-1)
@@ -347,7 +347,7 @@ To test accessibility, Wave was used. All came back in a positive light.
 
 | Feature                                   | Expected Outcome                                                      | Testing Performed                                                                                     | Result                                                                            | Pass/Fail |
 | ----------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------- |
-| Name input on first visit                 | Alert box pops up on first visit only and prompts user to input name  | Cache reset and page refreshed, page visited after intial prompt                                      | Alert box pops up and requests username only on first visit                       | Pass      |
+| Name input on first visit                 | Alert box pops up on first visit only and prompts user to input name  | Cache reset and page refreshed, page visited after initial prompt                                     | Alert box pops up and requests username only on first visit                       | Pass      |
 | Default username                          | Displays the username "Mysterious Stranger" if no username is entered | Did not enter username                                                                                | "Mysterious Stranger" shows on index screen and in win/loss game alerts           | Pass      |
 | Menu Buttons                              | Navigate between both game modes, game rules and main menu            | Clicked on buttons                                                                                    | Correct game or page loaded                                                       | Pass      |
 | Rock, Paper, Scissors game                | Play a game of Rock, Paper, Scissors                                  | console.log to make sure the computer was only selecting from rock, paper or scissors.                | Computer only selected from rock, paper or scissors.                              | Pass      |
