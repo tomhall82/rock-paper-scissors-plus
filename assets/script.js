@@ -20,6 +20,9 @@ let firstVisit = true;
 
 let score = { wins: 0, losses: 0, highScore: 0 };
 
+/**
+ * Selects correct array for choices depending on game type
+ */
 function getUserChoices(gameType) {
   let choices = [];
   if (gameType === "plus") {
@@ -32,6 +35,9 @@ function getUserChoices(gameType) {
   return choices;
 }
 
+/**
+ * Main game function
+ */
 function playGame(playerChoice) {
   let playerName = sessionStorage.getItem("playerName");
   let gameType = sessionStorage.getItem("gameType");
@@ -92,6 +98,9 @@ if (
 }
 
 // Get name function
+/**
+ * Generates an alert box and stores either user input into player name or placeholder in session storage.
+ */
 function getName() {
   let playerName = prompt(
     "Welcome to Rock, Paper, Scissors Plus! \nPlease enter your Username:",
@@ -105,6 +114,7 @@ function getName() {
     alert("Hi " + playerName + "! Lets play!");
     sessionStorage.setItem("playerName", playerName);
   }
+  // Refresh page to make sure latest username shows
   location.replace("index.html");
 }
 
