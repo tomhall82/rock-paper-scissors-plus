@@ -23,7 +23,7 @@ h2 {
 }
 
 /* buttons */
-button {
+.button {
   max-width: 220px;
   height: 50px;
   background-color: #ff206e;
@@ -34,9 +34,14 @@ button {
   padding: 0 10px;
   font-weight: bold;
   color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-button > a {
+a {
   text-decoration: none;
   color: black;
 }
@@ -74,7 +79,7 @@ i {
   color: #0c0f0a;
 }
 
-#intro-buttons {
+.menu-buttons {
   margin-top: 30px;
   border: none;
   display: flex;
@@ -115,7 +120,7 @@ i {
     font-size: 16px;
   }
 
-  button {
+  .button {
     font-size: 16px;
     max-width: 280px;
     height: 60px;
@@ -146,10 +151,10 @@ i {
     font-size: 18px;
   }
 
-  button {
+  .button {
     font-size: 16px;
     max-width: 320px;
-    margin: 10px 0;
+    margin: 5px 0;
     height: 60px;
   }
 
