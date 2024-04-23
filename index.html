@@ -40,31 +40,34 @@
     <h1>Welcome to Rock, Paper, Scissors Plus!</h1>
     <div>
       <p><span id="player-name"> </span>, please choose a game mode:</p>
-      <div id="intro-buttons">
-        <button
+      <div class="menu-buttons">
+        <a
+          href="traditional.html"
           aria-label="play rock, paper, scissors"
           data-type="traditional"
-          class="mode-button menubtn"
+          class="button mode-button menubtn"
+          >Play traditonal Rock, Paper, Scissors</a
         >
-          <a href="traditional.html">Play traditonal Rock, Paper, Scissors</a>
-        </button>
-        <button
+
+        <a
+          href="plus.html"
           aria-label="play rock, paper, scissors, lizard, spock"
           data-type="plus"
-          class="mode-button plus menubtn"
+          class="button mode-button menubtn"
+          >Play Rock, Paper, Scissors, Lizard, Spock</a
         >
-          <a href="plus.html">Play Rock, Paper, Scissors, Lizard, Spock</a>
-        </button>
-        <button aria-label="game rules" class="button menubtn">
-          <a href="rules.html">Game Rules</a>
-        </button>
-        <button
+
+        <a href="rules.html" aria-label="game rules" class="button menubtn"
+          >Game Rules</a
+        >
+
+        <div
           aria-label="change username"
           id="change-username"
           class="button menubtn"
         >
           Change Username
-        </button>
+        </div>
       </div>
     </div>
     <!-- Font awesome kit -->

@@ -38,14 +38,14 @@
   </head>
   <body>
     <h1 id="plus">Rock, Paper, Scissors, Lizard, Spock</h1>
-    <div>
-      <button
+    <div class="menu-buttons">
+      <a
+        href="traditional.html"
         aria-label="play rock, paper, scissors"
         data-type="traditional"
-        class="mode-button"
+        class="button mode-button"
+        >Play traditional Rock, Paper, Scissors</a
       >
-        <a href="traditional.html">Play traditional Rock, Paper, Scissors</a>
-      </button>
     </div>
     <div class="play-area">
       <button aria-label="rock" data-type="rock" class="game-button rock">
@@ -74,11 +74,9 @@
       <p class="scores">Losses: <span class="losses">0</span></p>
       <p class="scores">High Score: <span class="high-score">0</span></p>
     </div>
-    <div>
-      <button aria-label="game rules">
-        <a href="rules.html">Game Rules</a>
-      </button>
-      <button aria-label="main menu"><a href="index.html">Main Menu</a></button>
+    <div class="menu-buttons">
+      <a href="rules.html" aria-label="game rules" class="button">Game Rules</a>
+      <a href="index.html" aria-label="main menu" class="button">Main Menu</a>
     </div>
     <!-- Font awesome kit -->
     <script
