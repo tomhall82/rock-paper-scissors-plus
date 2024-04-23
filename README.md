@@ -343,6 +343,18 @@ To test accessibility, Wave was used. All came back in a positive light.
 
 ![404.html wave results](assets/docs/testing/wave/wave_404.png)
 
+### Manual Testing
+
+| Feature                                   | Expected Outcome                                                      | Testing Performed                                                                                     | Result                                                                            | Pass/Fail |
+| ----------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------- |
+| Name input on first visit                 | Alert box pops up on first visit only and prompts user to input name  | Cache reset and page refreshed, page visited after intial prompt                                      | Alert box pops up and requests username only on first visit                       | Pass      |
+| Default username                          | Displays the username "Mysterious Stranger" if no username is entered | Did not enter username                                                                                | "Mysterious Stranger" shows on index screen and in win/loss game alerts           | Pass      |
+| Menu Buttons                              | Navigate between both game modes, game rules and main menu            | Clicked on buttons                                                                                    | Correct game or page loaded                                                       | Pass      |
+| Rock, Paper, Scissors game                | Play a game of Rock, Paper, Scissors                                  | console.log to make sure the computer was only selecting from rock, paper or scissors.                | Computer only selected from rock, paper or scissors.                              | Pass      |
+| Rock, Paper, Scissors, Lizard, Spock game | Play a game of Rock, Paper, Scissors, Lizard, Spock                   | console.log to make sure the computer was only selecting from rock, paper, scissors, lizard or spock. | Computer only selected from rock, paper, scissors, lizard or spock.               | Pass      |
+| Wins reset upon loss                      | Wins reset back to zero upon loss                                     | Played 10+ games to test                                                                              | Each win increased counter, reset back to zero upon loss                          | Pass      |
+| High Score counter                        | Shows user their best winning streak                                  | Played 10+ games to test                                                                              | High score would increase with each win if number is higher than previous record. | Pass      |
+
 ### Solved Bugs
 
 1. Game mode wouldn't change between "traditional" and "plus". The computer was using all five available options regardless of game mode. This was resolved using a function and else if command to select the correct array dependant on the game mode selected.
@@ -357,11 +369,7 @@ To test accessibility, Wave was used. All came back in a positive light.
 
 ### Code Used
 
--
-
-### Content
-
--
+- Score HTML taken from Love Maths project.
 
 ### Media
 
@@ -380,4 +388,3 @@ To test accessibility, Wave was used. All came back in a positive light.
 ## Acknowledgments
 
 - [Graeme Taylor](https://github.com/G-Taylor), my Code Institute mentor.
--
